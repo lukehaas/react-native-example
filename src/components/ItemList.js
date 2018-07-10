@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
 import Item from './Item';
 
@@ -22,7 +22,7 @@ Item.propTypes = {
     image: PropTypes.string,
     quantity: PropTypes.number,
     price: PropTypes.number,
-  })),
+  }).isRequired).isRequired,
 };
 
 const styles = StyleSheet.create({
